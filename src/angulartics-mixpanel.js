@@ -26,13 +26,13 @@ angular.module('angulartics.mixpanel', ['angulartics'])
     });
   });
 
-  angulartics.waitForVendorApi('mixpanel', 500, 'identify', function (mixpanel) {
+  angulartics.waitForVendorApi('mixpanel', 500, '__loaded', function (mixpanel) {
     $analyticsProvider.registerSetUsername(function (userId) {
       mixpanel.identify(userId);
     });
   });
 
-  angulartics.waitForVendorApi('mixpanel', 500, 'people', function (mixpanel) {
+  angulartics.waitForVendorApi('mixpanel', 500, '__loaded', function (mixpanel) {
     $analyticsProvider.registerSetUserProperties(function (properties) {
       mixpanel.people.set(properties);
     });
