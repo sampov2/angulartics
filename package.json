@@ -18,11 +18,11 @@
     "analytics",
     "tracking",
     "google analytics",
-		"google tag manager",
+    "google tag manager",
     "mixpanel",
     "kissmetrics",
     "chartbeat",
-		"woopra",
+    "woopra",
     "segment.io",
     "splunk",
     "flurry",
@@ -33,8 +33,7 @@
   "bugs": {
     "url": "http://github.com/luisfarzati/angulartics/issues"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "latest",
     "grunt-karma": "latest",
@@ -42,6 +41,8 @@
     "grunt-contrib-concat": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-clean": "latest",
-    "phantomjs": "latest"
+    "phantomjs": "latest",
+    "karma-jasmine": "^0.2.2",
+    "karma-chrome-launcher": "^0.1.2"
   }
 }
