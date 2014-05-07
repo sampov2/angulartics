@@ -38,7 +38,7 @@ angular.module('angulartics.mixpanel', ['angulartics'])
     });
   });
 
-  angulartics.waitForVendorApi('mixpanel', 500, function (mixpanel) {
+  angulartics.waitForVendorApi('mixpanel', 500, '__loaded', function (mixpanel) {
     $analyticsProvider.registerSetUserPropertiesOnce(function (properties) {
       mixpanel.people.set_once(properties);
     });
